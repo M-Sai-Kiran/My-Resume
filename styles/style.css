@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*imports*/
+/*variables*/
+body {
+  width: 90%;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  border-bottom: 5px #5d9509 solid;
+}
+
+.name {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 35rem;
+          flex: 5 1 35rem;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 20rem;
+          flex: 3 1 20rem;
+}
+
+.image img {
+  max-width: 120px;
+  max-height: 120px;
+  border: 2px #5d9509 solid;
+  border-radius: 50%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 20rem;
+          flex: 3 1 20rem;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .projects {
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 20rem;
+          flex: 6 1 20rem;
+}
+
+.content .projects ul {
+  margin-left: 2rem;
+  list-style-type: square;
+}
+
+.content .others {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 20rem;
+          flex: 2 1 20rem;
+}
+/*# sourceMappingURL=style.css.map */
