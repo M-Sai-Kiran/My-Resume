@@ -5,15 +5,35 @@
 
 /*imports*/
 @import "_allmixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Noto+Sans+JP:wght@500&family=Sora&display=swap");
 
 /*variables*/
 $green: rgb(93, 149, 9);
+$lytgreen: rgb(94, 150, 10);
 $grey: rgb(87, 97, 71);
 
 body {
   background-color: whitesmoke;
 }
-
+h1 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+input,
+h4 {
+  color: $lytgreen;
+  font-family: "Sora", sans-serif;
+}
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+div {
+  margin-bottom: 2rem;
+}
+p,
+li {
+  margin: 4px;
+}
 .block-grey {
   min-width: 25px;
   min-height: 50px;
@@ -37,8 +57,7 @@ a {
   @include flex(row, space-between, center);
   min-height: 10vh;
   border-bottom: 5px $green solid;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+
   margin-top: 2rem;
 }
 .name {
@@ -50,15 +69,13 @@ a {
   @include flex(column, center, center);
   flex: 3 1 20rem;
   img {
-    max-width: 120px;
-    max-height: 120px;
-    border: 2px $green solid;
+    max-width: 150px;
+    max-height: 150px;
+    border: 4px $green solid;
     border-radius: 50%;
   }
 }
-.Project {
-  margin-bottom: 2rem;
-}
+
 .contact {
   @include flex(column, center, flex-end);
   flex: 3 1 20rem;
@@ -67,13 +84,24 @@ a {
   }
 }
 .content {
-  @include flex(row, center, center);
+  @include flex(row, center, flex-start);
   .projects {
     flex: 6 1 20rem;
-    padding-right: 10rem;
+    padding-right: 4rem;
+
     ul {
       margin-left: 2rem;
-      list-style-type: square;
+      list-style: none; /* Remove default bullets */
+    }
+
+    ul li::before {
+      content: "\2023"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $lytgreen; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1.2em; /* Also needed for space (tweak if needed) */
+      font-size: 1.5rem;
     }
   }
   .others {
